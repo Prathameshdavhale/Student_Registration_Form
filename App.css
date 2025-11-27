@@ -1,0 +1,210 @@
+/* -----------------------------------
+   MAIN WRAPPER
+----------------------------------- */
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  background: #f3f6fc;
+  min-height: 100vh;
+}
+
+/* -----------------------------------
+   CONTAINER
+----------------------------------- */
+.main-container {
+  width: 75%;
+  max-width: 900px;
+}
+
+/* -----------------------------------
+   FORM BOX
+----------------------------------- */
+.form-box {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* -----------------------------------
+   TITLES
+----------------------------------- */
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #243b63;
+  margin-bottom: 10px;
+}
+
+h4 {
+  text-align: center;
+  color: #3a568c;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* -----------------------------------
+   SECTION BOX
+----------------------------------- */
+.section-box {
+  background: #f8faff;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 35px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.07);
+}
+
+.section-title {
+  background: #e7edfb;
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-bottom: 22px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #243b63;
+}
+
+/* -----------------------------------
+   LABELS
+----------------------------------- */
+.label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #243b63;
+  font-size: 15px;
+}
+
+/* -----------------------------------
+   INPUTS & SELECT
+----------------------------------- */
+.input {
+  width: 100%;
+  padding: 7px;
+  border-radius: 8px;
+  border: 1.4px solid #cdd8ea;
+  background: #ffffff;
+  margin-bottom: 18px;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.input:focus {
+  border-color: #5e7fe6;
+  box-shadow: 0 0 5px rgba(107, 140, 224, 0.35);
+  outline: none;
+}
+
+.input-file {
+  margin-top: 10px;
+  padding: 7px;
+  border-radius: 6px;
+  border: 1.4px solid #cdd8ea;
+  background: #fff;
+}
+
+/* -----------------------------------
+   GRID LAYOUTS
+----------------------------------- */
+.two-grid,
+.three-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.two-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.three-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* -----------------------------------
+   UPLOAD BOX
+----------------------------------- */
+.upload-box {
+  padding: 25px;
+  border: 2px dashed #b6c4de;
+  background: #fafcff;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cloud {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.hint {
+  color: #6b778b;
+  font-size: 13px;
+}
+
+/* -----------------------------------
+   CHECKBOXES
+----------------------------------- */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 35px;
+  margin-top: 8px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #243b63;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* Input for "Other" */
+.other-input {
+  margin-top: 15px;
+}
+
+/* -----------------------------------
+   SUBMIT BUTTON
+----------------------------------- */
+.submit-wrapper {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.submit-btn {
+  background: #243b63;
+  padding: 14px 35px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 220px;
+}
+
+.submit-btn:hover {
+  background: #162a4b;
+  transform: translateY(-2px);
+}
+
+/* -----------------------------------
+   RESPONSIVE DESIGN
+----------------------------------- */
+@media (max-width: 768px) {
+  .main-container {
+    width: 92%;
+  }
+
+  .two-grid,
+  .three-grid {
+    grid-template-columns: 1fr;
+  }
+}
